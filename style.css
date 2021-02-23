@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 16px/1.8 "Abhaya Libre", sans-serif;
+    color: #777;
+}
+
+.navbar {
+    overflow: hidden;
+    /*background-color: #333;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+
+    display: block;
+    color: #5e4378;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgimg-1 {
+    background-image: url("image/background1.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("image/background2.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("image/background3.jpg");
+    min-height: 400px;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 0px;
+    font-family: "Amatic SC", sans-serif;
+}
+nav ul li{
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+}
+nav ul a{
+    text-decoration: none;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 40pt;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 45px;
+    letter-spacing: 10px;
+    font-family: "Amatic SC", sans-serif;
+
+}
+.caption span.bordergomb{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 45px;
+    letter-spacing: 10px;
+    font-family: "Amatic SC", sans-serif;
+    border-radius: 15px;
+
+} 
+.caption span.bordergomb a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+label {
+    /*float: right;*/
+    width: 10em;
+    text-align: right;
+}
+input{
+    float: right;
+}
+
+textarea{
+    float: right;
+    resize: none;
+}
+
+.felsoszoveg{
+    color: #5e4b94;
+    background-color:white;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+
+.felsoszoveg img{
+    float: right;
+    width: 250px;
+}
+
+.felsoszoveg2{
+    color: white;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+
+}
+
+.balrakep{
+    padding: 8px;    
+    background-color: #aca4de;
+    opacity: 0.8;
+    margin: 15px;
+}
+
+
+.jobbrakep{
+    padding: 8px;    
+    opacity: 0.8;
+    background-color: #aca4de;
+    margin: 15px;
+}
+
+.balrakep img{
+    width: 150px;
+    float: left;
+    padding: 10px;
+}
+
+
+.jobbrakep img{
+    width: 150px;
+    float: right;
+    padding: 10px;
+
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 22px "Abhaya Libre", sans-serif;
+    color: purple;
+    text-align:center;
+
+}
+.sotethatter{
+    color:#ddd;
+    background-color:#282E34;
+    padding:50px 80px;
+    text-align: justify; 
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
