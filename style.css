@@ -136,7 +136,6 @@ textarea{
 
 .felsoszoveg2{
     color: white;
-    text-align:center;
     padding:50px 80px;
     text-align: justify;
 
@@ -186,8 +185,7 @@ h3 {
     text-align: justify; 
 }
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
